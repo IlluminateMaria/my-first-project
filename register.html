@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register </title>
+    <link rel="stylesheet" href="style.css">
+
+        <!-- Link Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Student Registration Form</h2>
+    </div>
+    <div class="form-container">
+    <form action="process_registration.php" method="POST">
+
+        <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="firstname" required>
+        </div>
+
+        <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="lastname" required>
+         </div>
+
+         <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+         </div>
+         <div class="form-group">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+        </div>
+    
+        <div class="form-group">
+        <label for="course">Course :</label>
+        <select id="course" name="course" required>
+            <option value="basic_coding">Basic Coding</option>
+            <option value="web_development">Web Development</option>
+            <option value="python_programming">Python Programming</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="password" required>
+             </div>
+
+             <div class="form-group">
+                <label for=" confirm password"> confirm password:</label>
+                <input type=" confirm password" id=" confirm" name="password"placeholder="confirmpa" required>
+                 </div>
+
+        <div class="btn">
+        <button type="submit" class="btn-register" value="Register">Register</button>
+        <button type="submit" class="btn-login" value="Login">Login</button>
+    </div>
+    </form>
+    </div>
+</body>
+</html>
+          
